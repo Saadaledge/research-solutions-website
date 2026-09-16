@@ -1,187 +1,222 @@
-const root = document.documentElement;
+// ==========================================
+// AFAQ KNOWLEDGE
+// Main Website JavaScript
+// ==========================================
 
-const langBtn = document.getElementById("langBtn");
-const menuBtn = document.getElementById("menuBtn");
-const mobileNav = document.getElementById("mobileNav");
+const body = document.body;
 
-const form = document.getElementById("contactForm");
-const formStatus = document.getElementById("formStatus");
+const languageSwitch = document.getElementById("languageSwitch");
 
+const menuToggle = document.getElementById("menuToggle");
 
-/*
-  اللغة الافتراضية
-  يتم حفظ اختيار المستخدم
-*/
+const nav = document.getElementById("nav");
 
-let lang = localStorage.getItem("siteLang") || "ar";
+const contactForm = document.getElementById("contactForm");
 
+const formMessage = document.getElementById("formMessage");
 
-/*
-  تغيير اللغة
-*/
-
-function applyLanguage(next) {
-
-  lang = next;
-
-  root.lang = lang;
-
-  root.dir = lang === "ar"
-    ? "rtl"
-    : "ltr";
+const year = document.getElementById("year");
 
 
-  /*
-    تغيير النصوص
-  */
+// ==========================================
+// YEAR
+// ==========================================
 
-  document
-    .querySelectorAll("[data-ar][data-en]")
-    .forEach(el => {
-
-      el.textContent =
-        el.dataset[lang];
-
-    });
+year.textContent = new Date().getFullYear();
 
 
-  /*
-    تغيير Placeholder
-  */
+// ==========================================
+// LANGUAGE
+// ==========================================
 
-  document
-    .querySelectorAll(
-      "[data-ar-placeholder][data-en-placeholder]"
-    )
-    .forEach(el => {
+let currentLanguage = localStorage.getItem("afaq-language") || "ar";
 
-      el.placeholder =
-        lang === "ar"
-          ? el.dataset.arPlaceholder
-          : el.dataset.enPlaceholder;
+function setLanguage(language) {
 
-    });
+  currentLanguage = language;
 
+  if (language === "en") {
 
-  /*
-    نص زر اللغة
-  */
+    body.classList.add("en");
 
-  langBtn.textContent =
-    lang === "ar"
-      ? "English"
-      : "العربية";
+    body.setAttribute("dir", "ltr");
 
+    body.setAttribute("lang", "en");
 
-  /*
-    عنوان الصفحة
-  */
+    languageSwitch.innerHTML = "AR";
 
-  document.title =
-    lang === "ar"
-      ? "حلول الأبحاث | Research Solutions"
-      : "Research Solutions | حلول الأبحاث";
+  } else {
 
+    body.classList.remove("en");
 
-  /*
-    حفظ اللغة
-  */
+    body.setAttribute("dir", "rtl");
 
-  localStorage.setItem(
-    "siteLang",
-    lang
-  );
+    body.setAttribute("lang", "ar");
+
+    languageSwitch.innerHTML = "EN";
+
+  }
+
+  localStorage.setItem("afaq-language", language);
 
 }
 
-
-/*
-  زر تبديل اللغة
-*/
-
-langBtn.addEventListener(
-  "click",
-  () => {
-
-    applyLanguage(
-      lang === "ar"
-        ? "en"
-        : "ar"
-    );
-
-  }
-);
+setLanguage(currentLanguage);
 
 
-/*
-  فتح القائمة في الجوال
-*/
+languageSwitch.addEventListener("click", () => {
 
-menuBtn.addEventListener(
-  "click",
-  () => {
+  const newLanguage = currentLanguage === "ar"
+    ? "en"
+    : "ar";
 
-    mobileNav.classList.toggle("open");
+  setLanguage(newLanguage);
 
-  }
-);
+});
 
 
-/*
-  إغلاق القائمة بعد الضغط على رابط
-*/
+// ==========================================
+// MOBILE MENU
+// ==========================================
 
-document
-  .querySelectorAll(".mobile-nav a")
-  .forEach(link => {
+menuToggle.addEventListener("click", () => {
 
-    link.addEventListener(
-      "click",
-      () => {
+  nav.classList.toggle("active");
 
-        mobileNav.classList.remove("open");
+});
 
-      }
-    );
+
+document.querySelectorAll(".nav a").forEach(link => {
+
+  link.addEventListener("click", () => {
+
+    nav.classList.remove("active");
 
   });
 
-
-/*
-  نموذج التواصل
-  حاليًا تجريبي.
-  
-  لاحقًا يمكن ربطه بـ:
-  Email
-  CRM
-  WhatsApp
-  Formspree
-  أو Backend خاص بك.
-*/
-
-form.addEventListener(
-  "submit",
-  (e) => {
-
-    e.preventDefault();
+});
 
 
-    formStatus.textContent =
-      lang === "ar"
+// ==========================================
+// CONTACT FORM
+// ==========================================
 
-        ? "تم استلام الطلب تجريبيًا. اربط النموذج ببريدك أو نظام CRM قبل الإطلاق."
+contactForm.addEventListener("submit", function(event) {
 
-        : "Demo submission received. Connect the form to your email or CRM before launch.";
+  event.preventDefault();
+
+  const name = contactForm.querySelector('[name="name"]').value.trim();
+
+  const email = contactForm.querySelector('[name="email"]').value.trim();
+
+  const message = contactForm.querySelector('[name="message"]').value.trim();
 
 
-    form.reset();
+  if (!name || !email || !message) {
+
+    if (currentLanguage === "ar") {
+
+      formMessage.textContent =
+        "فضلاً أكمل البيانات المطلوبة.";
+
+    } else {
+
+      formMessage.textContent =
+        "Please complete the required fields.";
+
+    }
+
+    return;
 
   }
+
+
+  if (currentLanguage === "ar") {
+
+    formMessage.textContent =
+      "تم استلام طلبك مبدئيًا. سيتم التواصل معك بعد ربط النموذج بالبريد الإلكتروني.";
+
+  } else {
+
+    formMessage.textContent =
+      "Your request has been received. Connect the form to your email service to enable delivery.";
+
+  }
+
+
+  formMessage.style.color = "#0b6257";
+
+  contactForm.reset();
+
+});
+
+
+// ==========================================
+// HEADER ON SCROLL
+// ==========================================
+
+const header = document.getElementById("header");
+
+window.addEventListener("scroll", () => {
+
+  if (window.scrollY > 30) {
+
+    header.style.boxShadow =
+      "0 8px 30px rgba(0,0,0,.07)";
+
+  } else {
+
+    header.style.boxShadow = "none";
+
+  }
+
+});
+
+
+// ==========================================
+// REVEAL ANIMATION
+// ==========================================
+
+const revealElements = document.querySelectorAll(
+  ".service-card, .about-card, .sector, .question-card, .insight-card, .timeline-item"
+);
+
+const observer = new IntersectionObserver(
+
+  entries => {
+
+    entries.forEach(entry => {
+
+      if (entry.isIntersecting) {
+
+        entry.target.style.opacity = "1";
+
+        entry.target.style.transform = "translateY(0)";
+
+        observer.unobserve(entry.target);
+
+      }
+
+    });
+
+  },
+
+  {
+    threshold: 0.08
+  }
+
 );
 
 
-/*
-  تشغيل اللغة المحفوظة
-*/
+revealElements.forEach(element => {
 
-applyLanguage(lang);
+  element.style.opacity = "0";
+
+  element.style.transform = "translateY(20px)";
+
+  element.style.transition =
+    "opacity .7s ease, transform .7s ease";
+
+  observer.observe(element);
+
+});
