@@ -1,498 +1,580 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <meta name="description"
-        content="حلول الأبحاث | Research Solutions — تنسيق الأبحاث والدراسات وتحليل البيانات والاستشارات البحثية.">
-
-  <title>حلول الأبحاث | Research Solutions</title>
+  <title>أفق المعرفة | AFAQ Knowledge</title>
+  <meta name="description" content="أفق المعرفة للبحوث والاستشارات — خدمات بحثية واستشارية قائمة على البيانات والمعرفة لدعم القرارات الاستثمارية والاستراتيجية." />
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  <link
-    href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap"
-    rel="stylesheet"
-  >
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-<header class="site-header">
-  <div class="container nav-wrap">
+<!-- ================= HEADER ================= -->
 
-    <a class="brand" href="#home">
-      <span class="brand-mark">
-        <svg viewBox="0 0 90 90">
-          <path d="M15 66V38l30-17 30 17v28"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="5"/>
+<header class="header" id="header">
 
-          <path d="M28 60V43M45 60V34M62 60V27"
-                stroke="currentColor"
-                stroke-width="7"
-                stroke-linecap="round"/>
+  <div class="container nav-container">
 
-          <path d="M45 14l4 8 9 2-7 6 2 9-8-5-8 5 2-9-7-6 9-2z"
-                fill="currentColor"/>
-        </svg>
-      </span>
+    <a href="#home" class="brand">
 
-      <span>
-        <strong
-          data-ar="حلول الأبحاث"
-          data-en="Research Solutions">
-          حلول الأبحاث
-        </strong>
+      <div class="brand-mark">
+        <span>أ</span>
+      </div>
 
-        <small>
-          Research Solutions
-        </small>
-      </span>
+      <div class="brand-text">
+        <strong class="ar">أفق المعرفة</strong>
+        <strong class="en">AFAQ KNOWLEDGE</strong>
+        <small class="ar">للبحوث والاستشارات</small>
+        <small class="en">RESEARCH & ADVISORY</small>
+      </div>
+
     </a>
 
+    <button class="menu-toggle" id="menuToggle">
+      ☰
+    </button>
 
-    <nav class="desktop-nav">
-      <a class="active"
-         href="#home"
-         data-ar="الرئيسية"
-         data-en="Home">
-         الرئيسية
-      </a>
+    <nav class="nav" id="nav">
 
-      <a href="#about"
-         data-ar="من نحن"
-         data-en="About">
-         من نحن
-      </a>
+      <a href="#home" data-ar="الرئيسية" data-en="Home">الرئيسية</a>
 
-      <a href="#services"
-         data-ar="خدماتنا"
-         data-en="Services">
-         خدماتنا
-      </a>
+      <a href="#about" data-ar="من نحن" data-en="About">من نحن</a>
 
-      <a href="#fields"
-         data-ar="مجالات الأبحاث"
-         data-en="Research Fields">
-         مجالات الأبحاث
-      </a>
+      <a href="#services" data-ar="خدماتنا" data-en="Services">خدماتنا</a>
 
-      <a href="#projects"
-         data-ar="المشاريع"
-         data-en="Projects">
-         المشاريع
-      </a>
+      <a href="#sectors" data-ar="مجالات العمل" data-en="Sectors">مجالات العمل</a>
 
-      <a href="#contact"
-         data-ar="تواصل معنا"
-         data-en="Contact">
-         تواصل معنا
-      </a>
+      <a href="#methodology" data-ar="منهجيتنا" data-en="Methodology">منهجيتنا</a>
+
+      <a href="#insights" data-ar="المعرفة" data-en="Insights">المعرفة</a>
+
+      <a href="#contact" data-ar="تواصل معنا" data-en="Contact">تواصل معنا</a>
+
     </nav>
 
-
-    <div class="nav-actions">
-      <button
-        class="lang-btn"
-        id="langBtn"
-        type="button">
-        English
-      </button>
-
-      <button
-        class="menu-btn"
-        id="menuBtn"
-        type="button">
-        ☰
-      </button>
-    </div>
-
-  </div>
-
-
-  <div class="mobile-nav" id="mobileNav">
-
-    <a href="#home"
-       data-ar="الرئيسية"
-       data-en="Home">
-       الرئيسية
-    </a>
-
-    <a href="#about"
-       data-ar="من نحن"
-       data-en="About">
-       من نحن
-    </a>
-
-    <a href="#services"
-       data-ar="خدماتنا"
-       data-en="Services">
-       خدماتنا
-    </a>
-
-    <a href="#fields"
-       data-ar="مجالات الأبحاث"
-       data-en="Research Fields">
-       مجالات الأبحاث
-    </a>
-
-    <a href="#projects"
-       data-ar="المشاريع"
-       data-en="Projects">
-       المشاريع
-    </a>
-
-    <a href="#contact"
-       data-ar="تواصل معنا"
-       data-en="Contact">
-       تواصل معنا
-    </a>
+    <button class="language-switch" id="languageSwitch">
+      <span>EN</span>
+    </button>
 
   </div>
 
 </header>
 
 
-<main>
-
-<!-- HERO -->
+<!-- ================= HERO ================= -->
 
 <section class="hero" id="home">
 
+  <div class="hero-background"></div>
+
   <div class="hero-overlay"></div>
 
-  <div class="container hero-grid">
+  <div class="container hero-content">
 
-    <div class="hero-copy reveal">
-
-      <span
-        class="eyebrow"
-        data-ar="معًا نحو مستقبل أكثر معرفة وابتكارًا"
-        data-en="Together toward a more informed, innovative future">
-        معًا نحو مستقبل أكثر معرفة وابتكارًا
-      </span>
-
-      <h1
-        data-ar="منسق أبحاث"
-        data-en="Research Coordinator">
-        منسق أبحاث
-      </h1>
-
-      <p class="hero-en">
-        Connecting Ideas and Opportunities — For a Lasting Impact
-      </p>
-
-      <p
-        data-ar="نربط بين الأفكار والفرص لنحوّل المعرفة والبيانات إلى قرارات أوضح ومشاريع ذات أثر مستدام."
-        data-en="We connect ideas, evidence and opportunities to turn knowledge and data into clearer decisions and lasting impact.">
-        نربط بين الأفكار والفرص لنحوّل المعرفة والبيانات إلى قرارات أوضح ومشاريع ذات أثر مستدام.
-      </p>
-
-      <div class="hero-actions">
-
-        <a class="btn btn-primary"
-           href="#contact"
-           data-ar="ابدأ مشروعك معنا"
-           data-en="Start a project">
-          ابدأ مشروعك معنا
-          <span>←</span>
-        </a>
-
-        <a class="btn btn-ghost"
-           href="#services"
-           data-ar="تعرّف على خدماتنا"
-           data-en="Explore our services">
-          تعرّف على خدماتنا
-        </a>
-
-      </div>
-
+    <div class="hero-badge">
+      <span class="pulse"></span>
+      <span class="ar">البحث • المعرفة • القرار</span>
+      <span class="en">Research • Knowledge • Decision</span>
     </div>
 
+    <h1>
+      <span class="ar">أفق المعرفة</span>
+      <span class="en">AFAQ KNOWLEDGE</span>
+    </h1>
 
-    <div class="hero-brand reveal">
+    <h2>
+      <span class="ar">للبحوث والاستشارات</span>
+      <span class="en">Research & Advisory</span>
+    </h2>
 
-      <div class="logo-orbit">
+    <p class="hero-description ar">
+      نحول الأسئلة المعقدة إلى معرفة واضحة ورؤى قابلة للتطبيق،
+      لمساعدة المستثمرين والمؤسسات على فهم الأسواق والفرص واتخاذ
+      قرارات أكثر استنادًا إلى الأدلة.
+    </p>
 
-        <div class="logo-symbol">
+    <p class="hero-description en">
+      We transform complex questions into clear insights and actionable
+      knowledge, helping investors and organizations understand markets,
+      opportunities and strategic decisions through evidence-based research.
+    </p>
 
-          <svg viewBox="0 0 120 120">
+    <div class="hero-buttons">
 
-            <path
-              d="M18 91V49l42-25 42 25v42"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="7"/>
+      <a href="#contact" class="btn btn-primary">
+        <span class="ar">ابدأ مشروعك البحثي</span>
+        <span class="en">Start Your Research</span>
+      </a>
 
-            <path
-              d="M34 83V57M60 83V43M86 83V32"
-              stroke="currentColor"
-              stroke-width="10"
-              stroke-linecap="round"/>
-
-            <path
-              d="M60 11l6 12 13 3-10 9 3 13-12-7-12 7 3-13-10-9 13-3z"
-              fill="currentColor"/>
-
-          </svg>
-
-        </div>
-
-        <div class="logo-name">
-          RESEARCH<br>
-          <span>SOLUTIONS</span>
-        </div>
-
-        <div class="logo-ar">
-          حلول الأبحاث
-        </div>
-
-        <div
-          class="logo-tag"
-          data-ar="معًا للمعرفة .. معًا للمستقبل"
-          data-en="Together for Knowledge .. Together for the Future">
-          معًا للمعرفة .. معًا للمستقبل
-        </div>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- STATS -->
-
-<section class="stats-strip">
-
-  <div class="container stats-grid">
-
-    <div class="stat">
-      <strong>[+00]</strong>
-      <span
-        data-ar="مشروع بحثي"
-        data-en="Research Projects">
-        مشروع بحثي
-      </span>
-    </div>
-
-    <div class="stat">
-      <strong>[+00]</strong>
-      <span
-        data-ar="جهة حكومية وخاصة"
-        data-en="Government & Private Entities">
-        جهة حكومية وخاصة
-      </span>
-    </div>
-
-    <div class="stat">
-      <strong>[+00]</strong>
-      <span
-        data-ar="باحث وخبير"
-        data-en="Researchers & Experts">
-        باحث وخبير
-      </span>
-    </div>
-
-    <div class="stat">
-      <strong>[00%]</strong>
-      <span
-        data-ar="مؤشر رضا العملاء"
-        data-en="Client Satisfaction">
-        مؤشر رضا العملاء
-      </span>
-    </div>
-
-  </div>
-
-  <p
-    class="demo-note"
-    data-ar="الأرقام بين الأقواس بيانات تجريبية — استبدلها ببياناتك الفعلية."
-    data-en="Numbers in brackets are demo placeholders — replace them with your verified figures.">
-    الأرقام بين الأقواس بيانات تجريبية — استبدلها ببياناتك الفعلية.
-  </p>
-
-</section>
-
-
-<!-- ABOUT -->
-
-<section class="section about" id="about">
-
-  <div class="container split">
-
-    <div class="photo-card">
-
-      <img
-        src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1400&q=85"
-        alt="Research and strategy meeting">
-
-      <div class="floating-badge">
-        <span>2030</span>
-
-        <small
-          data-ar="رؤية للمستقبل"
-          data-en="Future-focused">
-          رؤية للمستقبل
-        </small>
-      </div>
-
-    </div>
-
-
-    <div class="about-copy">
-
-      <span class="section-kicker">
-        / About Us
-      </span>
-
-      <h2
-        data-ar="من نحن؟"
-        data-en="Who are we?">
-        من نحن؟
-      </h2>
-
-      <p
-        data-ar="فريق مستقل لتنسيق الأبحاث والدراسات، نعمل مع المستثمرين والجهات الخاصة والحكومية لتطوير مشاريع بحثية عملية، وتحويل الأسئلة المعقدة إلى رؤى قابلة للاستخدام."
-        data-en="An independent research coordination team working with investors, private organizations and public entities to build practical studies and turn complex questions into usable insight.">
-        فريق مستقل لتنسيق الأبحاث والدراسات، نعمل مع المستثمرين والجهات الخاصة والحكومية لتطوير مشاريع بحثية عملية، وتحويل الأسئلة المعقدة إلى رؤى قابلة للاستخدام.
-      </p>
-
-      <p
-        class="muted"
-        data-ar="نربط أصحاب القرار بالباحثين والخبراء المناسبين، وننسّق دورة المشروع من تحديد السؤال وحتى التقرير والتوصيات."
-        data-en="We connect decision-makers with the right researchers and experts, coordinating the full project cycle from research question to final report and recommendations.">
-        نربط أصحاب القرار بالباحثين والخبراء المناسبين، وننسّق دورة المشروع من تحديد السؤال وحتى التقرير والتوصيات.
-      </p>
-
-      <a
-        class="text-link"
-        href="#contact"
-        data-ar="تحدث معنا عن مشروعك →"
-        data-en="Talk to us about your project →">
-        تحدث معنا عن مشروعك →
+      <a href="#services" class="btn btn-outline">
+        <span class="ar">اكتشف خدماتنا</span>
+        <span class="en">Explore Services</span>
       </a>
 
     </div>
 
   </div>
 
+  <div class="hero-bottom">
+
+    <div>
+      <strong>01</strong>
+      <span class="ar">تحليل</span>
+      <span class="en">Analysis</span>
+    </div>
+
+    <div>
+      <strong>02</strong>
+      <span class="ar">بحث</span>
+      <span class="en">Research</span>
+    </div>
+
+    <div>
+      <strong>03</strong>
+      <span class="ar">رؤية</span>
+      <span class="en">Insight</span>
+    </div>
+
+    <div>
+      <strong>04</strong>
+      <span class="ar">قرار</span>
+      <span class="en">Decision</span>
+    </div>
+
+  </div>
+
 </section>
 
 
-<!-- SERVICES -->
+<!-- ================= INTRO ================= -->
+
+<section class="intro section">
+
+  <div class="container intro-grid">
+
+    <div>
+
+      <span class="section-label">
+        <span class="ar">أفق المعرفة</span>
+        <span class="en">AFAQ KNOWLEDGE</span>
+      </span>
+
+      <h2>
+        <span class="ar">
+          المعرفة الجيدة تبدأ<br>
+          <em>بسؤال جيد.</em>
+        </span>
+
+        <span class="en">
+          Better decisions begin<br>
+          with <em>better questions.</em>
+        </span>
+      </h2>
+
+    </div>
+
+    <div>
+
+      <p class="large-text ar">
+        نعمل على تصميم وتنفيذ مشاريع بحثية واستشارية تساعد أصحاب
+        القرار على الانتقال من البيانات المتفرقة إلى صورة أوضح
+        للسوق والفرص والتحديات.
+      </p>
+
+      <p class="large-text en">
+        We design and deliver research and advisory projects that
+        help decision-makers move from fragmented information to
+        a clearer understanding of markets, opportunities and challenges.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= ABOUT ================= -->
+
+<section class="section about" id="about">
+
+  <div class="container">
+
+    <div class="section-heading">
+
+      <div>
+        <span class="section-label">
+          <span class="ar">من نحن</span>
+          <span class="en">ABOUT US</span>
+        </span>
+
+        <h2>
+          <span class="ar">شريكك في تحويل المعرفة إلى قيمة</span>
+          <span class="en">Turning Knowledge Into Value</span>
+        </h2>
+      </div>
+
+      <p>
+        <span class="ar">
+          أفق المعرفة منصة بحثية واستشارية مستقلة تركز على إنتاج
+          المعرفة وتحليل المعلومات لدعم المشاريع الاستثمارية
+          والاستراتيجية.
+        </span>
+
+        <span class="en">
+          AFAQ Knowledge is an independent research and advisory
+          practice focused on producing knowledge and analyzing
+          information to support investment and strategic projects.
+        </span>
+      </p>
+
+    </div>
+
+    <div class="about-grid">
+
+      <div class="about-card featured">
+
+        <div class="number">01</div>
+
+        <h3>
+          <span class="ar">منهجية قائمة على الأدلة</span>
+          <span class="en">Evidence-Based Approach</span>
+        </h3>
+
+        <p>
+          <span class="ar">
+            نركز على جمع المعلومات من مصادر موثوقة، والتحقق منها،
+            ثم تحليلها ضمن سياق السوق والمشروع.
+          </span>
+
+          <span class="en">
+            We focus on reliable information, validation and
+            contextual analysis aligned with the market and project.
+          </span>
+        </p>
+
+      </div>
+
+      <div class="about-card">
+
+        <div class="number">02</div>
+
+        <h3>
+          <span class="ar">فهم السوق المحلي</span>
+          <span class="en">Local Market Understanding</span>
+        </h3>
+
+        <p>
+          <span class="ar">
+            نضع البيئة السعودية والسياق المحلي في الاعتبار عند
+            تصميم الدراسات وتحليل الفرص.
+          </span>
+
+          <span class="en">
+            We consider the Saudi market environment and local
+            context when designing studies and analyzing opportunities.
+          </span>
+        </p>
+
+      </div>
+
+      <div class="about-card">
+
+        <div class="number">03</div>
+
+        <h3>
+          <span class="ar">مخرجات قابلة للاستخدام</span>
+          <span class="en">Actionable Outputs</span>
+        </h3>
+
+        <p>
+          <span class="ar">
+            لا نكتفي بعرض المعلومات؛ بل ننظمها في تقارير وملخصات
+            ولوحات تحليلية تساعد على فهم الصورة واتخاذ الخطوة التالية.
+          </span>
+
+          <span class="en">
+            We organize findings into reports, executive summaries
+            and analytical dashboards designed to support next steps.
+          </span>
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= SERVICES ================= -->
 
 <section class="section services" id="services">
 
   <div class="container">
 
-    <div class="section-heading">
+    <div class="section-heading centered">
 
-      <div>
+      <span class="section-label">
+        <span class="ar">خدماتنا</span>
+        <span class="en">OUR SERVICES</span>
+      </span>
 
-        <span class="section-kicker">
-          / Our Services
+      <h2>
+        <span class="ar">حلول بحثية مصممة حسب احتياجك</span>
+        <span class="en">Research Solutions Built Around Your Needs</span>
+      </h2>
+
+      <p>
+        <span class="ar">
+          من سؤال أولي إلى تقرير متكامل، نساعدك في بناء رحلة
+          بحثية واضحة ومنظمة.
         </span>
 
-        <h2
-          data-ar="خدماتنا"
-          data-en="Our Services">
-          خدماتنا
-        </h2>
-
-      </div>
-
-      <p
-        data-ar="منظومة متكاملة تبدأ من صياغة السؤال البحثي، مرورًا بجمع وتحليل البيانات، وصولًا إلى توصيات قابلة للتنفيذ."
-        data-en="An integrated workflow from research design and data collection to analysis, reporting and actionable recommendations.">
-        منظومة متكاملة تبدأ من صياغة السؤال البحثي، مرورًا بجمع وتحليل البيانات، وصولًا إلى توصيات قابلة للتنفيذ.
+        <span class="en">
+          From an initial question to a complete report, we help
+          build a clear and structured research journey.
+        </span>
       </p>
 
     </div>
 
 
-    <div class="cards-4">
+    <div class="service-grid">
 
       <article class="service-card">
 
-        <div class="card-icon">01</div>
+        <span class="service-icon">⌕</span>
 
-        <h3
-          data-ar="الاستشارات البحثية"
-          data-en="Research Consulting">
-          الاستشارات البحثية
+        <span class="service-number">01</span>
+
+        <h3>
+          <span class="ar">البحوث السوقية</span>
+          <span class="en">Market Research</span>
         </h3>
 
-        <p
-          data-ar="تصميم منهجيات الدراسة، تحديد الأسئلة، وبناء إطار بحثي مناسب للهدف."
-          data-en="Study design, research questions, methodologies and evidence frameworks aligned to the objective.">
-          تصميم منهجيات الدراسة، تحديد الأسئلة، وبناء إطار بحثي مناسب للهدف.
+        <p>
+          <span class="ar">
+            دراسة الأسواق والقطاعات والمنافسين والعملاء لفهم
+            البيئة التي يعمل فيها المشروع.
+          </span>
+
+          <span class="en">
+            Market, sector, competitor and customer research
+            to understand the environment surrounding a project.
+          </span>
         </p>
+
+        <ul>
+          <li class="ar">تحليل حجم السوق</li>
+          <li class="ar">تحليل المنافسين</li>
+          <li class="ar">دراسة العملاء</li>
+          <li class="ar">رصد الاتجاهات</li>
+
+          <li class="en">Market sizing</li>
+          <li class="en">Competitor analysis</li>
+          <li class="en">Customer research</li>
+          <li class="en">Trend analysis</li>
+        </ul>
 
       </article>
 
 
       <article class="service-card">
 
-        <div class="card-icon">02</div>
+        <span class="service-icon">◫</span>
 
-        <h3
-          data-ar="تحليل البيانات والمعلومات"
-          data-en="Data Analysis">
-          تحليل البيانات والمعلومات
+        <span class="service-number">02</span>
+
+        <h3>
+          <span class="ar">الدراسات والبحوث</span>
+          <span class="en">Research & Studies</span>
         </h3>
 
-        <p
-          data-ar="تنظيف البيانات وتحليلها بصريًا وإحصائيًا لاستخراج الأنماط والمؤشرات."
-          data-en="Data preparation, statistical analysis and visualization to uncover patterns and indicators.">
-          تنظيف البيانات وتحليلها بصريًا وإحصائيًا لاستخراج الأنماط والمؤشرات.
+        <p>
+          <span class="ar">
+            إعداد الدراسات النوعية والكمية والبحوث المكتبية
+            والمقارنات المرجعية حسب طبيعة السؤال البحثي.
+          </span>
+
+          <span class="en">
+            Qualitative, quantitative, desk research and
+            benchmarking studies tailored to the research question.
+          </span>
         </p>
+
+        <ul>
+          <li class="ar">البحوث المكتبية</li>
+          <li class="ar">الدراسات المقارنة</li>
+          <li class="ar">تحليل الاتجاهات</li>
+          <li class="ar">المراجعات البحثية</li>
+
+          <li class="en">Desk research</li>
+          <li class="en">Benchmarking</li>
+          <li class="en">Trend analysis</li>
+          <li class="en">Literature reviews</li>
+        </ul>
 
       </article>
 
 
       <article class="service-card">
 
-        <div class="card-icon">03</div>
+        <span class="service-icon">⌁</span>
 
-        <h3
-          data-ar="إعداد الدراسات والبحوث"
-          data-en="Research & Studies">
-          إعداد الدراسات والبحوث
+        <span class="service-number">03</span>
+
+        <h3>
+          <span class="ar">تحليل البيانات</span>
+          <span class="en">Data Analysis</span>
         </h3>
 
-        <p
-          data-ar="دراسات سوقية وقطاعية واجتماعية مبنية على مصادر ومنهجيات واضحة."
-          data-en="Market, sector and social studies built on transparent sources and structured methodologies.">
-          دراسات سوقية وقطاعية واجتماعية مبنية على مصادر ومنهجيات واضحة.
+        <p>
+          <span class="ar">
+            تحويل مجموعات البيانات إلى مؤشرات واتجاهات ورسومات
+            تساعد على فهم النتائج.
+          </span>
+
+          <span class="en">
+            Turning datasets into indicators, trends and
+            visualizations that make findings easier to understand.
+          </span>
         </p>
+
+        <ul>
+          <li class="ar">تنظيف البيانات</li>
+          <li class="ar">التحليل الوصفي</li>
+          <li class="ar">تصميم المؤشرات</li>
+          <li class="ar">تصوير البيانات</li>
+
+          <li class="en">Data cleaning</li>
+          <li class="en">Descriptive analysis</li>
+          <li class="en">KPI design</li>
+          <li class="en">Data visualization</li>
+        </ul>
 
       </article>
 
 
       <article class="service-card">
 
-        <div class="card-icon">04</div>
+        <span class="service-icon">↗</span>
 
-        <h3
-          data-ar="الكتابة والتقارير العلمية"
-          data-en="Scientific Writing">
-          الكتابة والتقارير العلمية
+        <span class="service-number">04</span>
+
+        <h3>
+          <span class="ar">الاستشارات البحثية</span>
+          <span class="en">Research Advisory</span>
         </h3>
 
-        <p
-          data-ar="تقارير احترافية، ملخصات تنفيذية، عروض بحثية وتوثيق للمصادر."
-          data-en="Professional reports, executive summaries, research presentations and source documentation.">
-          تقارير احترافية، ملخصات تنفيذية، عروض بحثية وتوثيق للمصادر.
+        <p>
+          <span class="ar">
+            مساعدة الباحثين والمستثمرين والفرق على تحديد الأسئلة
+            والمنهجيات والمصادر المناسبة.
+          </span>
+
+          <span class="en">
+            Supporting researchers, investors and teams in defining
+            research questions, methodologies and suitable sources.
+          </span>
         </p>
+
+        <ul>
+          <li class="ar">تصميم منهجية البحث</li>
+          <li class="ar">تحديد المصادر</li>
+          <li class="ar">مراجعة الدراسات</li>
+          <li class="ar">تفسير النتائج</li>
+
+          <li class="en">Research design</li>
+          <li class="en">Source mapping</li>
+          <li class="en">Study review</li>
+          <li class="en">Findings interpretation</li>
+        </ul>
+
+      </article>
+
+
+      <article class="service-card">
+
+        <span class="service-icon">✎</span>
+
+        <span class="service-number">05</span>
+
+        <h3>
+          <span class="ar">الكتابة والتقارير العلمية</span>
+          <span class="en">Research Writing</span>
+        </h3>
+
+        <p>
+          <span class="ar">
+            صياغة وترتيب المحتوى البحثي في صورة احترافية واضحة
+            ومناسبة للجمهور المستهدف.
+          </span>
+
+          <span class="en">
+            Structuring research content into professional,
+            clear deliverables for the intended audience.
+          </span>
+        </p>
+
+        <ul>
+          <li class="ar">التقارير التنفيذية</li>
+          <li class="ar">الأوراق البحثية</li>
+          <li class="ar">ملخصات الدراسات</li>
+          <li class="ar">العروض التقديمية</li>
+
+          <li class="en">Executive reports</li>
+          <li class="en">Research papers</li>
+          <li class="en">Study summaries</li>
+          <li class="en">Presentations</li>
+        </ul>
+
+      </article>
+
+
+      <article class="service-card">
+
+        <span class="service-icon">◎</span>
+
+        <span class="service-number">06</span>
+
+        <h3>
+          <span class="ar">دراسات الجدوى والتحليل الأولي</span>
+          <span class="en">Feasibility & Initial Assessment</span>
+        </h3>
+
+        <p>
+          <span class="ar">
+            دعم المرحلة الأولية من تقييم فكرة أو فرصة عبر جمع
+            المعلومات وتحليل السوق والافتراضات الرئيسية.
+          </span>
+
+          <span class="en">
+            Supporting early-stage opportunity assessment through
+            market research, information gathering and key assumptions.
+          </span>
+        </p>
+
+        <ul>
+          <li class="ar">تحليل أولي للسوق</li>
+          <li class="ar">تحديد الفرضيات</li>
+          <li class="ar">تحليل المخاطر</li>
+          <li class="ar">تحديد فجوات المعلومات</li>
+
+          <li class="en">Market assessment</li>
+          <li class="en">Assumption mapping</li>
+          <li class="en">Risk analysis</li>
+          <li class="en">Information gaps</li>
+        </ul>
 
       </article>
 
@@ -503,390 +585,99 @@
 </section>
 
 
-<!-- FIELDS -->
+<!-- ================= SECTORS ================= -->
 
-<section class="section fields" id="fields">
-
-  <div class="container">
-
-    <div class="section-heading">
-
-      <div>
-
-        <span class="section-kicker">
-          / Research Fields
-        </span>
-
-        <h2
-          data-ar="مجالات الأبحاث"
-          data-en="Research Fields">
-          مجالات الأبحاث
-        </h2>
-
-      </div>
-
-      <p
-        data-ar="مجالات متعددة يمكن تخصيصها بحسب المشروع والقطاع والهدف الاستثماري."
-        data-en="Flexible research coverage tailored to the project, sector and investment objective.">
-        مجالات متعددة يمكن تخصيصها بحسب المشروع والقطاع والهدف الاستثماري.
-      </p>
-
-    </div>
-
-
-    <div class="field-grid">
-
-      <div class="field">
-        <span>01</span>
-        <b
-          data-ar="الاقتصاد والمال"
-          data-en="Economics & Finance">
-          الاقتصاد والمال
-        </b>
-      </div>
-
-      <div class="field">
-        <span>02</span>
-        <b
-          data-ar="الصحة وعلوم الحياة"
-          data-en="Health & Life Sciences">
-          الصحة وعلوم الحياة
-        </b>
-      </div>
-
-      <div class="field">
-        <span>03</span>
-        <b
-          data-ar="التقنية والابتكار"
-          data-en="Technology & Innovation">
-          التقنية والابتكار
-        </b>
-      </div>
-
-      <div class="field">
-        <span>04</span>
-        <b
-          data-ar="العلوم الاجتماعية"
-          data-en="Social Sciences">
-          العلوم الاجتماعية
-        </b>
-      </div>
-
-      <div class="field">
-        <span>05</span>
-        <b
-          data-ar="البيئة والاستدامة"
-          data-en="Environment & Sustainability">
-          البيئة والاستدامة
-        </b>
-      </div>
-
-      <div class="field">
-        <span>06</span>
-        <b
-          data-ar="الطاقة والموارد"
-          data-en="Energy & Resources">
-          الطاقة والموارد
-        </b>
-      </div>
-
-      <div class="field">
-        <span>07</span>
-        <b
-          data-ar="التعليم والتدريب"
-          data-en="Education & Training">
-          التعليم والتدريب
-        </b>
-      </div>
-
-      <div class="field">
-        <span>08</span>
-        <b
-          data-ar="إدارة الأعمال"
-          data-en="Business Administration">
-          إدارة الأعمال
-        </b>
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- IMPACT / PROJECTS -->
-
-<section class="section impact" id="projects">
-
-  <div class="container impact-grid">
-
-    <div class="chart-panel">
-
-      <div class="panel-title">
-
-        <span
-          data-ar="مثال توضيحي"
-          data-en="Illustrative example">
-          مثال توضيحي
-        </span>
-
-        <h3
-          data-ar="تطور مؤشر البحث"
-          data-en="Research Index Trend">
-          تطور مؤشر البحث
-        </h3>
-
-      </div>
-
-
-      <div class="chart">
-
-        <div class="y-labels">
-          <span>100</span>
-          <span>75</span>
-          <span>50</span>
-          <span>25</span>
-          <span>0</span>
-        </div>
-
-        <div class="bars">
-
-          <div class="bar" style="--h:32%">
-            <i>2022</i>
-          </div>
-
-          <div class="bar" style="--h:43%">
-            <i>2023</i>
-          </div>
-
-          <div class="bar" style="--h:57%">
-            <i>2024</i>
-          </div>
-
-          <div class="bar" style="--h:72%">
-            <i>2025</i>
-          </div>
-
-          <div class="bar" style="--h:86%">
-            <i>2026</i>
-          </div>
-
-        </div>
-
-      </div>
-
-      <p
-        class="chart-note"
-        data-ar="استبدل هذا الرسم ببيانات مشاريعك أو مؤشراتك الفعلية."
-        data-en="Replace this illustrative chart with your verified project or market indicators.">
-        استبدل هذا الرسم ببيانات مشاريعك أو مؤشراتك الفعلية.
-      </p>
-
-    </div>
-
-
-    <div class="projects-panel">
-
-      <div class="panel-title">
-
-        <span
-          data-ar="نماذج أعمال"
-          data-en="Selected Work">
-          نماذج أعمال
-        </span>
-
-        <h3
-          data-ar="مشاريع بحثية نموذجية"
-          data-en="Featured Research">
-          مشاريع بحثية نموذجية
-        </h3>
-
-      </div>
-
-
-      <div class="project-list">
-
-        <article class="project">
-
-          <img
-            src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=600&q=80"
-            alt="Business district">
-
-          <div>
-
-            <b
-              data-ar="دراسة التحول الرقمي"
-              data-en="Digital Transformation Study">
-              دراسة التحول الرقمي
-            </b>
-
-            <small
-              data-ar="قطاع الأعمال والخدمات"
-              data-en="Business & Services">
-              قطاع الأعمال والخدمات
-            </small>
-
-          </div>
-
-        </article>
-
-
-        <article class="project">
-
-          <img
-            src="https://images.unsplash.com/photo-1466611653911-95081537e5b7?auto=format&fit=crop&w=600&q=80"
-            alt="Renewable energy">
-
-          <div>
-
-            <b
-              data-ar="تحليل اتجاهات الطاقة المتجددة"
-              data-en="Renewable Energy Trends">
-              تحليل اتجاهات الطاقة المتجددة
-            </b>
-
-            <small
-              data-ar="الطاقة والاستدامة"
-              data-en="Energy & Sustainability">
-              الطاقة والاستدامة
-            </small>
-
-          </div>
-
-        </article>
-
-
-        <article class="project">
-
-          <img
-            src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=600&q=80"
-            alt="Research team">
-
-          <div>
-
-            <b
-              data-ar="دراسة سوق العمل"
-              data-en="Labor Market Study">
-              دراسة سوق العمل
-            </b>
-
-            <small
-              data-ar="الاقتصاد والعلوم الاجتماعية"
-              data-en="Economics & Social Sciences">
-              الاقتصاد والعلوم الاجتماعية
-            </small>
-
-          </div>
-
-        </article>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- PROCESS -->
-
-<section class="section process">
+<section class="section sectors" id="sectors">
 
   <div class="container">
 
     <div class="section-heading centered">
 
-      <span class="section-kicker">
-        / Our Process
+      <span class="section-label">
+        <span class="ar">مجالات العمل</span>
+        <span class="en">AREAS OF FOCUS</span>
       </span>
 
-      <h2
-        data-ar="كيف نعمل؟"
-        data-en="How We Work">
-        كيف نعمل؟
+      <h2>
+        <span class="ar">معرفة أعمق بالقطاعات والفرص</span>
+        <span class="en">Deeper Understanding Across Sectors</span>
       </h2>
-
-      <p
-        data-ar="نحوّل الفكرة إلى نتيجة بحثية واضحة عبر خمس مراحل مترابطة."
-        data-en="We turn an idea into a clear research outcome through five connected stages.">
-        نحوّل الفكرة إلى نتيجة بحثية واضحة عبر خمس مراحل مترابطة.
-      </p>
 
     </div>
 
 
-    <div class="steps">
+    <div class="sector-grid">
 
-      <div class="step">
-        <span>01</span>
-        <b
-          data-ar="فهم الاحتياج"
-          data-en="Understand Needs">
-          فهم الاحتياج
-        </b>
-        <small
-          data-ar="تحديد السؤال والأهداف"
-          data-en="Define questions & goals">
-          تحديد السؤال والأهداف
-        </small>
+      <div class="sector">
+        <strong>01</strong>
+        <h3>
+          <span class="ar">الاستثمار والأعمال</span>
+          <span class="en">Investment & Business</span>
+        </h3>
+        <p>
+          <span class="ar">تحليل الأسواق والفرص التجارية ودعم الدراسات الأولية.</span>
+          <span class="en">Markets, opportunities and early-stage business analysis.</span>
+        </p>
       </div>
 
-      <div class="step">
-        <span>02</span>
-        <b
-          data-ar="البحث والتحليل"
-          data-en="Research & Analysis">
-          البحث والتحليل
-        </b>
-        <small
-          data-ar="جمع الأدلة وتحليلها"
-          data-en="Gather and analyze evidence">
-          جمع الأدلة وتحليلها
-        </small>
+      <div class="sector">
+        <strong>02</strong>
+        <h3>
+          <span class="ar">التقنية والابتكار</span>
+          <span class="en">Technology & Innovation</span>
+        </h3>
+        <p>
+          <span class="ar">رصد الاتجاهات التقنية وتحليل الأسواق الناشئة.</span>
+          <span class="en">Technology trends and emerging market analysis.</span>
+        </p>
       </div>
 
-      <div class="step">
-        <span>03</span>
-        <b
-          data-ar="إعداد التقرير"
-          data-en="Prepare Report">
-          إعداد التقرير
-        </b>
-        <small
-          data-ar="صياغة النتائج والتوصيات"
-          data-en="Findings & recommendations">
-          صياغة النتائج والتوصيات
-        </small>
+      <div class="sector">
+        <strong>03</strong>
+        <h3>
+          <span class="ar">العقار والإنشاءات</span>
+          <span class="en">Real Estate & Construction</span>
+        </h3>
+        <p>
+          <span class="ar">أبحاث السوق والطلب والمنافسة والاتجاهات القطاعية.</span>
+          <span class="en">Market, demand, competition and sector research.</span>
+        </p>
       </div>
 
-      <div class="step">
-        <span>04</span>
-        <b
-          data-ar="المراجعة والتدقيق"
-          data-en="Quality Review">
-          المراجعة والتدقيق
-        </b>
-        <small
-          data-ar="تدقيق المنهجية والمخرجات"
-          data-en="Methodology & output review">
-          تدقيق المنهجية والمخرجات
-        </small>
+      <div class="sector">
+        <strong>04</strong>
+        <h3>
+          <span class="ar">السياحة والضيافة</span>
+          <span class="en">Tourism & Hospitality</span>
+        </h3>
+        <p>
+          <span class="ar">فهم سلوك الزوار واتجاهات السوق والفرص المحتملة.</span>
+          <span class="en">Visitor behavior, market trends and opportunity research.</span>
+        </p>
       </div>
 
-      <div class="step">
-        <span>05</span>
-        <b
-          data-ar="التسليم والدعم"
-          data-en="Delivery & Support">
-          التسليم والدعم
-        </b>
-        <small
-          data-ar="متابعة ما بعد المشروع"
-          data-en="Post-project support">
-          متابعة ما بعد المشروع
-        </small>
+      <div class="sector">
+        <strong>05</strong>
+        <h3>
+          <span class="ar">الصحة وجودة الحياة</span>
+          <span class="en">Health & Quality of Life</span>
+        </h3>
+        <p>
+          <span class="ar">دراسات واتجاهات تساعد على فهم احتياجات المستفيدين.</span>
+          <span class="en">Research into needs, trends and user perspectives.</span>
+        </p>
+      </div>
+
+      <div class="sector">
+        <strong>06</strong>
+        <h3>
+          <span class="ar">التعليم والمعرفة</span>
+          <span class="en">Education & Knowledge</span>
+        </h3>
+        <p>
+          <span class="ar">بحوث ومراجعات وتحليلات في مجالات التعليم والتدريب.</span>
+          <span class="en">Research and analysis across education and training.</span>
+        </p>
       </div>
 
     </div>
@@ -896,83 +687,579 @@
 </section>
 
 
-<!-- WHY US -->
+<!-- ================= RESEARCH DASHBOARD ================= -->
 
-<section class="why">
+<section class="section dashboard">
+
+  <div class="container dashboard-grid">
+
+    <div class="dashboard-copy">
+
+      <span class="section-label">
+        <span class="ar">كيف نقرأ السوق؟</span>
+        <span class="en">HOW WE READ THE MARKET</span>
+      </span>
+
+      <h2>
+        <span class="ar">نربط بين البيانات والسياق</span>
+        <span class="en">We Connect Data With Context</span>
+      </h2>
+
+      <p>
+        <span class="ar">
+          لا تعني الأرقام شيئًا دون سياق. لذلك نعمل على قراءة
+          المؤشرات بجانب العوامل الاقتصادية والسلوكية والتنظيمية
+          والقطاعية ذات الصلة.
+        </span>
+
+        <span class="en">
+          Numbers need context. We interpret indicators alongside
+          relevant economic, behavioral, regulatory and sector factors.
+        </span>
+      </p>
+
+      <div class="insight-list">
+
+        <div>
+          <span>01</span>
+          <p>
+            <strong class="ar">جمع المعلومات</strong>
+            <strong class="en">Information Gathering</strong>
+            <small class="ar">تحديد المصادر والمعلومات المطلوبة.</small>
+            <small class="en">Mapping sources and information needs.</small>
+          </p>
+        </div>
+
+        <div>
+          <span>02</span>
+          <p>
+            <strong class="ar">تحليل البيانات</strong>
+            <strong class="en">Data Analysis</strong>
+            <small class="ar">استخراج الأنماط والمؤشرات.</small>
+            <small class="en">Identifying patterns and indicators.</small>
+          </p>
+        </div>
+
+        <div>
+          <span>03</span>
+          <p>
+            <strong class="ar">صياغة الرؤية</strong>
+            <strong class="en">Insight Development</strong>
+            <small class="ar">ربط النتائج بسؤال المشروع.</small>
+            <small class="en">Connecting findings to the business question.</small>
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <div class="chart-card">
+
+      <div class="chart-header">
+
+        <div>
+          <small class="ar">مثال توضيحي</small>
+          <small class="en">Illustrative Example</small>
+
+          <h3>
+            <span class="ar">مؤشرات الاهتمام البحثي</span>
+            <span class="en">Research Interest Indicators</span>
+          </h3>
+        </div>
+
+        <span class="chart-tag">DATA</span>
+
+      </div>
+
+
+      <div class="bars">
+
+        <div class="bar-item">
+          <div class="bar-info">
+            <span class="ar">تحليل السوق</span>
+            <span class="en">Market Analysis</span>
+            <strong>82%</strong>
+          </div>
+          <div class="bar">
+            <i style="width:82%"></i>
+          </div>
+        </div>
+
+        <div class="bar-item">
+          <div class="bar-info">
+            <span class="ar">دراسة المنافسين</span>
+            <span class="en">Competitor Research</span>
+            <strong>74%</strong>
+          </div>
+          <div class="bar">
+            <i style="width:74%"></i>
+          </div>
+        </div>
+
+        <div class="bar-item">
+          <div class="bar-info">
+            <span class="ar">تحليل العملاء</span>
+            <span class="en">Customer Research</span>
+            <strong>68%</strong>
+          </div>
+          <div class="bar">
+            <i style="width:68%"></i>
+          </div>
+        </div>
+
+        <div class="bar-item">
+          <div class="bar-info">
+            <span class="ar">الاتجاهات</span>
+            <span class="en">Trends</span>
+            <strong>61%</strong>
+          </div>
+          <div class="bar">
+            <i style="width:61%"></i>
+          </div>
+        </div>
+
+      </div>
+
+      <p class="chart-note">
+        <span class="ar">* بيانات توضيحية وليست نتائج دراسة فعلية.</span>
+        <span class="en">* Illustrative data, not actual research results.</span>
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= METHODOLOGY ================= -->
+
+<section class="section methodology" id="methodology">
+
+  <div class="container">
+
+    <div class="section-heading centered">
+
+      <span class="section-label">
+        <span class="ar">منهجية العمل</span>
+        <span class="en">OUR METHODOLOGY</span>
+      </span>
+
+      <h2>
+        <span class="ar">من السؤال إلى القرار</span>
+        <span class="en">From Question to Decision</span>
+      </h2>
+
+    </div>
+
+
+    <div class="timeline">
+
+      <div class="timeline-item">
+
+        <span class="timeline-number">01</span>
+
+        <div>
+          <h3>
+            <span class="ar">فهم السؤال</span>
+            <span class="en">Understand</span>
+          </h3>
+
+          <p>
+            <span class="ar">نحدد الهدف والسؤال الرئيسي والنتيجة المطلوبة.</span>
+            <span class="en">Define the objective, key question and desired outcome.</span>
+          </p>
+        </div>
+
+      </div>
+
+
+      <div class="timeline-item">
+
+        <span class="timeline-number">02</span>
+
+        <div>
+          <h3>
+            <span class="ar">تصميم البحث</span>
+            <span class="en">Design</span>
+          </h3>
+
+          <p>
+            <span class="ar">نختار المنهجية والمصادر وأسلوب التحليل المناسب.</span>
+            <span class="en">Select the methodology, sources and analytical approach.</span>
+          </p>
+        </div>
+
+      </div>
+
+
+      <div class="timeline-item">
+
+        <span class="timeline-number">03</span>
+
+        <div>
+          <h3>
+            <span class="ar">جمع المعلومات</span>
+            <span class="en">Research</span>
+          </h3>
+
+          <p>
+            <span class="ar">نجمع ونراجع المعلومات ذات الصلة بالمشروع.</span>
+            <span class="en">Collect and review relevant information for the project.</span>
+          </p>
+        </div>
+
+      </div>
+
+
+      <div class="timeline-item">
+
+        <span class="timeline-number">04</span>
+
+        <div>
+          <h3>
+            <span class="ar">التحليل</span>
+            <span class="en">Analyze</span>
+          </h3>
+
+          <p>
+            <span class="ar">نحلل البيانات ونبحث عن الأنماط والفروقات والاتجاهات.</span>
+            <span class="en">Analyze data to identify patterns, differences and trends.</span>
+          </p>
+        </div>
+
+      </div>
+
+
+      <div class="timeline-item">
+
+        <span class="timeline-number">05</span>
+
+        <div>
+          <h3>
+            <span class="ar">المخرجات</span>
+            <span class="en">Deliver</span>
+          </h3>
+
+          <p>
+            <span class="ar">نقدم النتائج في صورة تقرير واضحة وقابلة للاستخدام.</span>
+            <span class="en">Deliver findings through clear and actionable outputs.</span>
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= PROJECT TYPES ================= -->
+
+<section class="section project-types">
+
+  <div class="container">
+
+    <div class="section-heading">
+
+      <div>
+
+        <span class="section-label">
+          <span class="ar">نماذج المشاريع</span>
+          <span class="en">PROJECT TYPES</span>
+        </span>
+
+        <h2>
+          <span class="ar">ما نوع السؤال الذي يمكننا مساعدتك فيه؟</span>
+          <span class="en">What Question Are You Trying to Answer?</span>
+        </h2>
+
+      </div>
+
+      <p>
+        <span class="ar">
+          نخصص نطاق العمل بحسب الهدف والقطاع ودرجة العمق المطلوبة.
+        </span>
+
+        <span class="en">
+          Scope is tailored to the objective, sector and level of depth required.
+        </span>
+      </p>
+
+    </div>
+
+
+    <div class="question-grid">
+
+      <div class="question-card">
+        <span>01</span>
+        <h3>
+          <span class="ar">هل السوق يستحق الدخول؟</span>
+          <span class="en">Is the market worth entering?</span>
+        </h3>
+      </div>
+
+      <div class="question-card">
+        <span>02</span>
+        <h3>
+          <span class="ar">من هم المنافسون الرئيسيون؟</span>
+          <span class="en">Who are the key competitors?</span>
+        </h3>
+      </div>
+
+      <div class="question-card">
+        <span>03</span>
+        <h3>
+          <span class="ar">ما احتياجات العملاء؟</span>
+          <span class="en">What do customers need?</span>
+        </h3>
+      </div>
+
+      <div class="question-card">
+        <span>04</span>
+        <h3>
+          <span class="ar">ما الاتجاهات المؤثرة؟</span>
+          <span class="en">What trends are shaping the market?</span>
+        </h3>
+      </div>
+
+      <div class="question-card">
+        <span>05</span>
+        <h3>
+          <span class="ar">ما البيانات التي نحتاجها؟</span>
+          <span class="en">What data do we need?</span>
+        </h3>
+      </div>
+
+      <div class="question-card">
+        <span>06</span>
+        <h3>
+          <span class="ar">كيف نعرض النتائج لصاحب القرار؟</span>
+          <span class="en">How should findings reach decision-makers?</span>
+        </h3>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= INSIGHTS ================= -->
+
+<section class="section insights" id="insights">
+
+  <div class="container">
+
+    <div class="section-heading centered">
+
+      <span class="section-label">
+        <span class="ar">المعرفة والرؤى</span>
+        <span class="en">INSIGHTS</span>
+      </span>
+
+      <h2>
+        <span class="ar">محتوى يساعدك على رؤية الصورة الأكبر</span>
+        <span class="en">Insights That Help You See the Bigger Picture</span>
+      </h2>
+
+    </div>
+
+
+    <div class="insight-grid">
+
+      <article class="insight-card">
+
+        <div class="insight-image image-market"></div>
+
+        <div class="insight-content">
+
+          <span class="tag">
+            <span class="ar">بحوث السوق</span>
+            <span class="en">MARKET RESEARCH</span>
+          </span>
+
+          <h3>
+            <span class="ar">كيف تبدأ دراسة سوق احترافية؟</span>
+            <span class="en">How to Start a Professional Market Study</span>
+          </h3>
+
+          <p>
+            <span class="ar">
+              نظرة على الأسئلة الأساسية التي تساعد في بناء إطار
+              واضح لأي دراسة سوق.
+            </span>
+
+            <span class="en">
+              An overview of the essential questions behind a structured
+              market research project.
+            </span>
+          </p>
+
+        </div>
+
+      </article>
+
+
+      <article class="insight-card">
+
+        <div class="insight-image image-data"></div>
+
+        <div class="insight-content">
+
+          <span class="tag">
+            <span class="ar">البيانات</span>
+            <span class="en">DATA</span>
+          </span>
+
+          <h3>
+            <span class="ar">من البيانات إلى الرؤية</span>
+            <span class="en">From Data to Insight</span>
+          </h3>
+
+          <p>
+            <span class="ar">
+              لماذا تحتاج الأرقام إلى سياق؟ وكيف يمكن عرض النتائج
+              بطريقة تخدم القرار؟
+            </span>
+
+            <span class="en">
+              Why numbers need context and how findings can be
+              presented for better decision support.
+            </span>
+          </p>
+
+        </div>
+
+      </article>
+
+
+      <article class="insight-card">
+
+        <div class="insight-image image-strategy"></div>
+
+        <div class="insight-content">
+
+          <span class="tag">
+            <span class="ar">استراتيجية</span>
+            <span class="en">STRATEGY</span>
+          </span>
+
+          <h3>
+            <span class="ar">السؤال الصحيح قبل التحليل</span>
+            <span class="en">The Right Question Before Analysis</span>
+          </h3>
+
+          <p>
+            <span class="ar">
+              تحديد السؤال البحثي بشكل صحيح يوفر الوقت ويرفع
+              قيمة المخرجات النهائية.
+            </span>
+
+            <span class="en">
+              Defining the research question correctly improves
+              efficiency and the value of final outputs.
+            </span>
+          </p>
+
+        </div>
+
+      </article>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= WHY US ================= -->
+
+<section class="section why-us">
 
   <div class="container why-grid">
 
     <div>
 
-      <span class="section-kicker light">
-        / Why Us?
+      <span class="section-label">
+        <span class="ar">لماذا أفق المعرفة؟</span>
+        <span class="en">WHY AFAQ</span>
       </span>
 
-      <h2
-        data-ar="لماذا نحن؟"
-        data-en="Why choose us?">
-        لماذا نحن؟
+      <h2>
+        <span class="ar">وضوح أكثر.<br>ضوضاء أقل.</span>
+        <span class="en">More Clarity.<br>Less Noise.</span>
       </h2>
 
-      <p
-        data-ar="نعمل بمنهجية تجمع بين التنسيق البحثي، التحليل، والوضوح التنفيذي؛ لتكون المخرجات مفيدة لصاحب القرار."
-        data-en="Our approach combines research coordination, analysis and executive clarity so the output is useful to decision-makers.">
-        نعمل بمنهجية تجمع بين التنسيق البحثي، التحليل، والوضوح التنفيذي؛ لتكون المخرجات مفيدة لصاحب القرار.
+      <p>
+        <span class="ar">
+          نؤمن أن قيمة البحث لا تكمن في كثرة الصفحات،
+          وإنما في جودة السؤال، وموثوقية المعلومات، ووضوح النتيجة.
+        </span>
+
+        <span class="en">
+          We believe research value is not measured by page count,
+          but by the quality of the question, reliability of information
+          and clarity of the conclusion.
+        </span>
       </p>
 
     </div>
 
 
-    <div class="why-cards">
+    <div class="principles">
 
       <div>
-        <strong>01</strong>
-
-        <b
-          data-ar="جودة منهجية"
-          data-en="Methodological Quality">
-          جودة منهجية
-        </b>
-
-        <span
-          data-ar="منهجيات واضحة ومصادر موثقة"
-          data-en="Clear methods and documented sources">
-          منهجيات واضحة ومصادر موثقة
-        </span>
+        <span>01</span>
+        <h3>
+          <span class="ar">الاستقلالية</span>
+          <span class="en">Independence</span>
+        </h3>
+        <p>
+          <span class="ar">نبدأ من السؤال والبيانات، لا من نتيجة مسبقة.</span>
+          <span class="en">We start from the question and evidence, not a predetermined conclusion.</span>
+        </p>
       </div>
 
-
       <div>
-        <strong>02</strong>
-
-        <b
-          data-ar="خبرة متنوعة"
-          data-en="Diverse Expertise">
-          خبرة متنوعة
-        </b>
-
-        <span
-          data-ar="تخصصات وباحثون حسب طبيعة المشروع"
-          data-en="Experts matched to project needs">
-          تخصصات وباحثون حسب طبيعة المشروع
-        </span>
+        <span>02</span>
+        <h3>
+          <span class="ar">الوضوح</span>
+          <span class="en">Clarity</span>
+        </h3>
+        <p>
+          <span class="ar">مخرجات منظمة تساعد على فهم ما تعنيه النتائج.</span>
+          <span class="en">Structured outputs designed to make findings understandable.</span>
+        </p>
       </div>
 
+      <div>
+        <span>03</span>
+        <h3>
+          <span class="ar">المرونة</span>
+          <span class="en">Flexibility</span>
+        </h3>
+        <p>
+          <span class="ar">نطاق العمل يتكيف مع طبيعة المشروع واحتياجاته.</span>
+          <span class="en">Scope adapts to each project's specific needs.</span>
+        </p>
+      </div>
 
       <div>
-        <strong>03</strong>
-
-        <b
-          data-ar="دعم مستمر"
-          data-en="Continuous Support">
-          دعم مستمر
-        </b>
-
-        <span
-          data-ar="تواصل ومراجعة حتى بعد التسليم"
-          data-en="Communication and review after delivery">
-          تواصل ومراجعة حتى بعد التسليم
-        </span>
+        <span>04</span>
+        <h3>
+          <span class="ar">السرية</span>
+          <span class="en">Confidentiality</span>
+        </h3>
+        <p>
+          <span class="ar">نتعامل مع معلومات المشروع باهتمام ومسؤولية.</span>
+          <span class="en">Project information is handled with care and responsibility.</span>
+        </p>
       </div>
 
     </div>
@@ -982,72 +1269,206 @@
 </section>
 
 
-<!-- CONTACT -->
+<!-- ================= CTA ================= -->
+
+<section class="cta">
+
+  <div class="container cta-content">
+
+    <span class="section-label">
+      <span class="ar">لنتحدث عن مشروعك</span>
+      <span class="en">LET'S TALK</span>
+    </span>
+
+    <h2>
+      <span class="ar">لديك سؤال بحثي؟<br>لنحوّله إلى مشروع واضح.</span>
+      <span class="en">Have a Research Question?<br>Let's Turn It Into a Clear Project.</span>
+    </h2>
+
+    <a href="#contact" class="btn btn-primary">
+      <span class="ar">تواصل معنا</span>
+      <span class="en">Contact Us</span>
+    </a>
+
+  </div>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
 
 <section class="section contact" id="contact">
 
-  <div class="container contact-box">
+  <div class="container contact-grid">
 
-    <div>
+    <div class="contact-info">
 
-      <span class="section-kicker">
-        / Contact
+      <span class="section-label">
+        <span class="ar">تواصل معنا</span>
+        <span class="en">CONTACT</span>
       </span>
 
-      <h2
-        data-ar="لديك فكرة بحثية؟ لنحوّلها إلى مشروع."
-        data-en="Have a research idea? Let's turn it into a project.">
-        لديك فكرة بحثية؟ لنحوّلها إلى مشروع.
+      <h2>
+        <span class="ar">ابدأ من سؤال واحد.</span>
+        <span class="en">Start With One Question.</span>
       </h2>
 
-      <p
-        data-ar="أرسل نبذة مختصرة عن احتياجك، وسنعود إليك لمناقشة نطاق العمل والمخرجات المقترحة."
-        data-en="Send a short brief and we will discuss scope, methodology and proposed deliverables.">
-        أرسل نبذة مختصرة عن احتياجك، وسنعود إليك لمناقشة نطاق العمل والمخرجات المقترحة.
+      <p>
+        <span class="ar">
+          أخبرنا عن المشروع أو السؤال الذي تعمل عليه،
+          وسنراجع احتياجك ونقترح إطارًا مناسبًا للعمل.
+        </span>
+
+        <span class="en">
+          Tell us about your project or research question.
+          We will review your needs and suggest an appropriate scope.
+        </span>
       </p>
+
+
+      <div class="contact-details">
+
+        <div>
+          <span>✉</span>
+          <div>
+            <small>
+              <span class="ar">البريد الإلكتروني</span>
+              <span class="en">Email</span>
+            </small>
+
+            <strong>info@afaqknowledge.sa</strong>
+          </div>
+        </div>
+
+
+        <div>
+          <span>⌖</span>
+          <div>
+            <small>
+              <span class="ar">الموقع</span>
+              <span class="en">Location</span>
+            </small>
+
+            <strong>
+              <span class="ar">الرياض، المملكة العربية السعودية</span>
+              <span class="en">Riyadh, Saudi Arabia</span>
+            </strong>
+          </div>
+        </div>
+
+
+        <div>
+          <span>◷</span>
+          <div>
+            <small>
+              <span class="ar">ساعات العمل</span>
+              <span class="en">Working Hours</span>
+            </small>
+
+            <strong>
+              <span class="ar">الأحد — الخميس | 9:00 — 17:00</span>
+              <span class="en">Sunday — Thursday | 9:00 — 17:00</span>
+            </strong>
+          </div>
+        </div>
+
+      </div>
 
     </div>
 
 
-    <form id="contactForm">
+    <form class="contact-form" id="contactForm">
 
-      <input
-        type="text"
-        name="name"
-        required
-        data-ar-placeholder="الاسم"
-        data-en-placeholder="Name"
-        placeholder="الاسم">
+      <div class="form-row">
 
-      <input
-        type="email"
-        name="email"
-        required
-        data-ar-placeholder="البريد الإلكتروني"
-        data-en-placeholder="Email"
-        placeholder="البريد الإلكتروني">
+        <div class="field">
+          <label>
+            <span class="ar">الاسم</span>
+            <span class="en">Name</span>
+          </label>
 
-      <textarea
-        name="message"
-        rows="5"
-        required
-        data-ar-placeholder="نبذة عن المشروع أو الطلب"
-        data-en-placeholder="Project brief or request"
-        placeholder="نبذة عن المشروع أو الطلب"></textarea>
+          <input
+            type="text"
+            name="name"
+            placeholder="الاسم الكامل"
+            required
+          />
+        </div>
 
-      <button
-        class="btn btn-primary"
-        type="submit"
-        data-ar="إرسال الطلب"
-        data-en="Send request">
-        إرسال الطلب
+
+        <div class="field">
+          <label>
+            <span class="ar">البريد الإلكتروني</span>
+            <span class="en">Email</span>
+          </label>
+
+          <input
+            type="email"
+            name="email"
+            placeholder="name@example.com"
+            required
+          />
+        </div>
+
+      </div>
+
+
+      <div class="field">
+
+        <label>
+          <span class="ar">نوع الخدمة</span>
+          <span class="en">Service</span>
+        </label>
+
+        <select name="service">
+
+          <option value="">
+            اختر الخدمة
+          </option>
+
+          <option>البحوث السوقية / Market Research</option>
+
+          <option>الدراسات والبحوث / Research & Studies</option>
+
+          <option>تحليل البيانات / Data Analysis</option>
+
+          <option>الاستشارات البحثية / Research Advisory</option>
+
+          <option>الكتابة والتقارير / Research Writing</option>
+
+          <option>أخرى / Other</option>
+
+        </select>
+
+      </div>
+
+
+      <div class="field">
+
+        <label>
+          <span class="ar">حدثنا عن مشروعك</span>
+          <span class="en">Tell us about your project</span>
+        </label>
+
+        <textarea
+          name="message"
+          rows="6"
+          placeholder="اكتب نبذة مختصرة عن احتياجك..."
+          required
+        ></textarea>
+
+      </div>
+
+
+      <button type="submit" class="btn btn-primary full">
+
+        <span class="ar">إرسال الطلب</span>
+        <span class="en">Submit Request</span>
+
       </button>
 
-      <p
-        id="formStatus"
-        class="form-status"
-        aria-live="polite">
-      </p>
+
+      <div id="formMessage" class="form-message"></div>
 
     </form>
 
@@ -1055,108 +1476,65 @@
 
 </section>
 
-</main>
 
-
-<!-- FOOTER -->
+<!-- ================= FOOTER ================= -->
 
 <footer class="footer">
 
   <div class="container footer-grid">
 
-    <div>
+    <div class="footer-brand">
 
-      <a class="brand footer-brand" href="#home">
+      <div class="footer-logo">أ</div>
 
-        <span class="brand-mark">
+      <h3>
+        <span class="ar">أفق المعرفة</span>
+        <span class="en">AFAQ KNOWLEDGE</span>
+      </h3>
 
-          <svg viewBox="0 0 90 90">
-
-            <path
-              d="M15 66V38l30-17 30 17v28"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="5"/>
-
-            <path
-              d="M28 60V43M45 60V34M62 60V27"
-              stroke="currentColor"
-              stroke-width="7"
-              stroke-linecap="round"/>
-
-            <path
-              d="M45 14l4 8 9 2-7 6 2 9-8-5-8 5 2-9-7-6 9-2z"
-              fill="currentColor"/>
-
-          </svg>
-
-        </span>
-
-        <span>
-          <strong>حلول الأبحاث</strong>
-          <small>Research Solutions</small>
-        </span>
-
-      </a>
-
-      <p
-        data-ar="معًا للمعرفة .. معًا للمستقبل"
-        data-en="Together for Knowledge .. Together for the Future">
-        معًا للمعرفة .. معًا للمستقبل
+      <p>
+        <span class="ar">للبحوث والاستشارات</span>
+        <span class="en">Research & Advisory</span>
       </p>
 
-    </div>
+      <small>
+        <span class="ar">
+          المعرفة التي تساعد على رؤية الفرص بوضوح.
+        </span>
 
-
-    <div>
-
-      <h4
-        data-ar="تواصل معنا"
-        data-en="Contact">
-        تواصل معنا
-      </h4>
-
-      <a href="mailto:info@example.com">
-        info@example.com
-      </a>
-
-      <a href="tel:+966500000000">
-        +966 50 000 0000
-      </a>
-
-      <span
-        data-ar="المملكة العربية السعودية"
-        data-en="Kingdom of Saudi Arabia">
-        المملكة العربية السعودية
-      </span>
+        <span class="en">
+          Knowledge that helps you see opportunities clearly.
+        </span>
+      </small>
 
     </div>
 
 
     <div>
 
-      <h4
-        data-ar="روابط سريعة"
-        data-en="Quick Links">
-        روابط سريعة
+      <h4>
+        <span class="ar">روابط</span>
+        <span class="en">Links</span>
       </h4>
 
-      <a href="#about"
-         data-ar="من نحن"
-         data-en="About">
-        من نحن
+      <a href="#about">
+        <span class="ar">من نحن</span>
+        <span class="en">About</span>
       </a>
 
-      <a href="#services"
-         data-ar="خدماتنا"
-         data-en="Services">
-        خدماتنا
+      <a href="#services">
+        <span class="ar">الخدمات</span>
+        <span class="en">Services</span>
       </a>
 
-      <a href="#projects"
-         data-ar="المشاريع"
-         data-en="Projects">
-        المشاريع
+      <a href="#methodology">
+        <span class="ar">المنهجية</span>
+        <span class="en">Methodology</span>
+      </a>
+
+      <a href="#contact">
+        <span class="ar">تواصل</span>
+        <span class="en">Contact</span>
       </a>
 
     </div>
@@ -1164,50 +1542,50 @@
 
     <div>
 
-      <h4
-        data-ar="اشترك في النشرة"
-        data-en="Newsletter">
-        اشترك في النشرة
+      <h4>
+        <span class="ar">مجالاتنا</span>
+        <span class="en">Focus Areas</span>
       </h4>
 
-      <p
-        data-ar="آخر المستجدات البحثية والفرص."
-        data-en="Research updates and opportunities.">
-        آخر المستجدات البحثية والفرص.
+      <a href="#sectors">Investment</a>
+      <a href="#sectors">Technology</a>
+      <a href="#sectors">Real Estate</a>
+      <a href="#sectors">Tourism</a>
+
+    </div>
+
+
+    <div>
+
+      <h4>
+        <span class="ar">ابدأ محادثة</span>
+        <span class="en">Start a Conversation</span>
+      </h4>
+
+      <p class="footer-contact">
+        info@afaqknowledge.sa
       </p>
 
-      <form
-        class="newsletter"
-        onsubmit="event.preventDefault(); alert(document.documentElement.lang === 'ar' ? 'تم تسجيل بريدك.' : 'Your email has been registered.');">
-
-        <input
-          type="email"
-          required
-          data-ar-placeholder="بريدك الإلكتروني"
-          data-en-placeholder="Your email"
-          placeholder="بريدك الإلكتروني">
-
-        <button
-          type="submit"
-          data-ar="اشترك"
-          data-en="Join">
-          اشترك
-        </button>
-
-      </form>
+      <p class="footer-contact">
+        Riyadh, Saudi Arabia
+      </p>
 
     </div>
 
   </div>
 
 
-  <div class="copyright">
-    © 2026 Research Solutions —
-    <span
-      data-ar="جميع الحقوق محفوظة."
-      data-en="All rights reserved.">
-      جميع الحقوق محفوظة.
+  <div class="footer-bottom container">
+
+    <span>
+      © <span id="year"></span> AFAQ Knowledge. All rights reserved.
     </span>
+
+    <span>
+      <span class="ar">الرياض • المملكة العربية السعودية</span>
+      <span class="en">Riyadh • Kingdom of Saudi Arabia</span>
+    </span>
+
   </div>
 
 </footer>
